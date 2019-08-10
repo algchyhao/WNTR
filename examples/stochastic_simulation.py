@@ -43,7 +43,7 @@ np.random.seed(67823) # Set random seed
 for i in range(5):
 
     # Select the number of leaks, random value between 1 and 5
-    N = np.random.random_integers(1,5,1)
+    N = np.random.randint(1,5,1)
 
     # Select N unique pipes based on failure probability
     pipes_to_fail = np.random.choice(failure_probability.index, 5,
